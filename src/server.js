@@ -10,9 +10,12 @@ app.use(bodyParser.json())
 
 const withDB = async (operations, res) => {
   try {
-    const client = await MongoClient.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-    })
+    const client = await MongoClient.connect(
+      'mongodb+srv://dbTest:deleon123@cluster0.amyok.mongodb.net/test',
+      {
+        useNewUrlParser: true,
+      }
+    )
     const db = client.db('my-blog')
 
     await operations(db)
