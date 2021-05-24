@@ -1,17 +1,19 @@
+db.articles.insertMany([
 {
-  "learn-react": {
+  {
     "name": "learn-react",
     "upvotes": 0,
-    "comments": []
+    "comments": [],
   },
-  "learn-node": {
+  {
     "name": "learn-node",
     "upvotes": 0,
-    "comments": []
+    "comments": [],
   },
-  "my-thoughts-on-resumes": {
+  {
     "name": "my-thoughts-on-resumes",
     "upvotes": 0,
-    "comments": []
+    "comments": [],
   }
 }
+])
